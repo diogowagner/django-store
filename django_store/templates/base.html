@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>{% block title %}Loja Virtual{% endblock title %}</title>
+	{% block css %}
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}/css/base.css" title="Default" media="screen">
+	{% endblock css %}
+	{% block extracss %}{% endblock extracss %}
+	{% block js %}{% endblock js %}
+	</head>
+	<body>
+	
+		<div class='general_content'>
+			<div class='header'>
+				{% block body_title %}{% endblock body_title %}
+			</div>
+			<div class='content'>
+				{% block body_content %}{% endblock body_content %}
+			</div>
+			<div class='footer'>
+				{% block body_footer %}{% endblock body_footer %}
+			</div>
+		</div>
+	
+	</body>
+</html>
